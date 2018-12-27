@@ -39,11 +39,11 @@ workflows:
   build:
     jobs:
       - deploy-production:
-        requires:
-          - deploy
-        filters:
-          tags:
-            only: /^v.*/
+          requires:
+            - deploy
+          filters:
+            tags:
+              only: /^v.*/
       - deploy-dev:
           requires:
             - deploy
