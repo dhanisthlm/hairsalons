@@ -24,7 +24,6 @@ export const receiveSalons = () => (dispatch) => {
 
 export const setPriceRange = (range) => (dispatch) => {
     const priceRange = JSON.stringify(range);
-    console.log(priceRange);
     return request
         .get(`/api/salons/range/${priceRange}`)
         .then(({data}) => {
