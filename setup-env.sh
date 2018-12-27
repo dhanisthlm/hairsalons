@@ -1,6 +1,6 @@
 case $CIRCLE_BRANCH in
     "develop")
-        export ENVIRONMENT="develop"
+        export ENVIRONMENT="development"
         export HEROKU_APP="hairsalons-develop"
         ;;
     "stage")
