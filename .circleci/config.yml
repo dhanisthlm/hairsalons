@@ -75,8 +75,6 @@ workflows:
     jobs:
       - deploy:
           filters:
-            tags:
-              ignore: /^*/
             branches:
               only:
                 - develop
@@ -85,5 +83,8 @@ workflows:
             filters:
               tags:
                 only: /^v.*/
+              branches:
+                only:
+                  - master
 
 
