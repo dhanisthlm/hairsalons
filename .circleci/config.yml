@@ -40,7 +40,8 @@ workflows:
   build-and-deploy:
     jobs:
       - deploy:
-          branches:
-              only: |
-                - develop
-                - master
+          filters:
+            branches:
+                only: |
+                  - develop
+                  - master
