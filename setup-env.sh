@@ -1,11 +1,11 @@
 case $CIRCLE_BRANCH in
     "develop")
-        export ENVIRONMENT="dev"
-        export HEROKU_APP="nordrum-com-develop"
+        export ENVIRONMENT="develop"
+        export HEROKU_APP="hairsalons-develop"
         ;;
     "master")
-        export ENVIRONMENT="production"
-        export HEROKU_APP="nordrum-com-stage"
+        export ENVIRONMENT="staging"
+        export HEROKU_APP="hairsalons-com-stage"
         ;;
 esac
 export NODE_ENV="production"
