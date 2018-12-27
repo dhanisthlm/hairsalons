@@ -7,13 +7,13 @@ jobs:
         - checkout
         - restore_cache: # special step to restore the dependency cache
             keys:
-              - yarn-packages-{{ checksum "../yarn.lock" }}
+              - yarn-packages-{{ checksum "/yarn.lock" }}
         - run:
             name: Setup Dependencies
             command: yarn install --frozen-lockfile
         - save_cache:
             name: Save Yarn Package Cache
-            key: yarn-packages-{{ checksum "../yarn.lock" }}
+            key: yarn-packages-{{ checksum "/yarn.lock" }}
             paths:
               - ~/.cache/yarn
         - run:
@@ -28,7 +28,7 @@ jobs:
               sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
         - run:
             name: Deploy heroku app
-            command: bash infra/deploy-heroku.sh
+            command: bash /deploy-heroku.sh
         - run:
             name: Set BUILD_NUM and COMPARE_URL on Heroku to CIRCLECI values
             command: |
