@@ -37,10 +37,11 @@ jobs:
 
 workflows:
   version: 2
-  jobs:
-    - deploy:
-        filters:
-        branches:
-            only:
-            - develop
-            - master
+  build-and-deploy:
+    jobs:
+      - deploy:
+          filters:
+          branches:
+              only:
+              - develop
+              - master
