@@ -1,6 +1,5 @@
 version: 2
 jobs:
-    shellcheck:
     deploy:
     docker:
         - image: circleci/node:10.5.0 # replace with the image you need
