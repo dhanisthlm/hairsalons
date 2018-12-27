@@ -75,6 +75,8 @@ workflows:
     jobs:
       - deploy:
           filters:
+            tags:
+              ignore: /^*/
             branches:
               only:
                 - develop
