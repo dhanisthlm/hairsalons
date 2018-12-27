@@ -48,9 +48,9 @@ workflows:
             branches:
               only:
                 - develop
-    - deploy-production:
-          filters:
-            tags:
-              only: /^v.*/
+      - deploy-production:
+            filters:
+              tags:
+                only: /^v.*/
 
 
