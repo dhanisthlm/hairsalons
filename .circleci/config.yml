@@ -74,11 +74,12 @@ workflows:
   version: 2
   build:
     jobs:
-      - deploy-stage:
+      - deploy:
           filters:
             branches:
               only:
                 - develop
+                - stage
       - deploy-production:
             filters:
               tags:
