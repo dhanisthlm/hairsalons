@@ -5,7 +5,7 @@ case $CIRCLE_BRANCH in
         ;;
     "master")
         export ENVIRONMENT="staging"
-        export HEROKU_APP="hairsalons-com-stage"
+        export HEROKU_APP="hairsalons-stage"
         ;;
 esac
 export NODE_ENV="production"
