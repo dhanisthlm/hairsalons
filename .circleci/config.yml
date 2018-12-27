@@ -44,8 +44,3 @@ workflows:
             only:
             - develop
             - master
-        # You should probably be running
-        # some checks before you deploy
-        # requires:
-        #  - test
-        #  - lint
