@@ -44,5 +44,6 @@ workflows:
             tags:
               only: /v[0-9]+(\.[0-9]+)+/
             branches:
-                only:
-                  - develop
+              only:
+                - develop
+
