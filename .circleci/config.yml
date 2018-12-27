@@ -37,16 +37,15 @@ jobs:
 
 workflows:
   version: 2
-  ci:
     jobs:
-        - deploy:
-            filters:
-            branches:
-                only:
-                - develop
-                - master
-            # You should probably be running
-            # some checks before you deploy
-            # requires:
-            #  - test
-            #  - lint
+      - deploy:
+          filters:
+          branches:
+              only:
+              - develop
+              - master
+          # You should probably be running
+          # some checks before you deploy
+          # requires:
+          #  - test
+          #  - lint
