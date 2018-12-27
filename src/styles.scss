@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'MillerBanner';
+    src: url('../dist/client/fonts/MillerBanner-Light.otf') format('open-type'),
+    url('../dist/client/fonts/MillerBanner-Light.woff2') format('woff2'),
+    url('../dist/client/fonts/MillerBanner-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 !important;
+    overflow-x: hidden;
+    font-family: 'Millerbanner', 'Times', 'serif';
+}

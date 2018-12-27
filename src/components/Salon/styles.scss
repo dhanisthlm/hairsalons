@@ -1,0 +1,129 @@
+.salon {
+    .cover {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        .photo {
+            width: 100%;
+        }
+
+        .like {
+            color: #fff;
+            font-size: 23px;
+            position: absolute;
+            right: 15px;
+            top: 12px;
+        }
+
+        .nav-back {
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 15px;
+            left: 7px;
+        }
+
+        .name {
+            position: absolute;
+            color: #fff;
+            font-family: MillerBanner,Times,"serif";
+            font-size: 21px;
+            bottom: 25px;
+            left: 14px;
+            text-shadow: 1px 1px #000;
+        }
+
+        .rating {
+            position: absolute;
+            overflow: hidden;
+            color: #fff;
+            width: 100%;
+            bottom: 10px;
+            padding: 10px 15px;
+
+            .stars {
+                float: left;
+                padding: 5px 0;
+
+                .star {
+                    position: relative;
+                    color: #D4AF37;
+                    margin-right: 2px;
+                    font-size: 12px;
+
+                    &.filled:before {
+                        content: "\2605";
+                        position: absolute;
+                        top: -3px;
+                    }
+                }
+
+                .votes {
+                    font-family: 'Helvetica', 'Arial', 'sans-serif';
+                    margin-left: 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .list {
+        margin: 0;
+        padding: 15px 25px;
+        list-style-type: none;
+
+        .list-item {
+            position: relative;
+            padding: 10px 0;
+            overflow: hidden;
+            border-bottom: 1px solid #F9F9F9;
+            font-family: 'Helvetica', "Arial", "sans-serif";
+            font-weight: 300;
+
+            .open-hours {
+                transform: rotate(-90deg);
+                color: #D4AF37;
+                position: absolute;
+                right: 125px;
+            }
+
+            p {
+                float: left;
+                margin: 0;
+                width: 90%;
+            }
+
+            i {
+                float: left;
+                margin: 0 10px 0 0;
+                color: #555;
+            }
+        }
+    }
+
+    .tabs {
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        border-bottom: 15px solid #F9F9F9;
+        margin: 0 20px;
+    }
+
+    .tab {
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 35px;
+        font-family: "helvetica", "arial", 'sans-serif';
+    }
+
+    .tab--active {
+        border-bottom: 2px solid #D4AF37;
+    }
+}
