@@ -41,8 +41,7 @@ jobs:
       steps:
         - run:
             name: merge develop into master
-            command: |
-              bash ./release-production.sh
+            command: bash ../release-production.sh
         - checkout
         - restore_cache: # special step to restore the dependency cache
             keys:
