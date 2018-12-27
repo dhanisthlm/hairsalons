@@ -42,9 +42,8 @@ workflows:
       - deploy:
           filters:
             tags:
-              only: /v[0-9]*/
+              only: /^v.*/
             branches:
-              only:
                 - develop
 
 
