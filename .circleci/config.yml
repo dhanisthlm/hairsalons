@@ -41,6 +41,7 @@ workflows:
     jobs:
       - deploy:
           filters:
+            tag: /v[0-9]+(\.[0-9]+)+/
             branches:
                 only:
                   - develop
