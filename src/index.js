@@ -14,7 +14,6 @@ render((
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRedirect to='/list'/>
-
         <Router path="/list" component={List} />
         <Route path="/list/salon/:id" component={Salon} onEnter={updateSalon}/>
       </Route>

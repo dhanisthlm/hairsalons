@@ -19,6 +19,9 @@ const salonSchema = Schema({
     openingHours: {
       type: String
     },
+    photo: {
+      type: String
+    },
     phone: {
       type: String
     },
