@@ -1,0 +1,6 @@
+{
+  "database": {
+    //"host": "mongodb://localhost/hairsalons"
+    "host": "mongodb://hairsalons:carp3di3m@ds111124.mlab.com:11124/heroku_2z6ntqmx"
+  }
+}
