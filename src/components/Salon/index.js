@@ -16,7 +16,6 @@ export class Salon extends Component {
     }
 
     componentDidUpdate() {
-      console.log(this.props)
         const { salon } = this.props;
         if (salon.photo !== this.state.salon.photo) {
             this.setState({ salon });

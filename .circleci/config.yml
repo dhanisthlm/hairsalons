@@ -17,6 +17,9 @@ jobs:
             paths:
               - ~/.cache/yarn
         - run:
+            name: Run tests
+            command: yarn run test
+        - run:
             name: Log in to Heroku
             command: bash ./login-heroku.sh
         - run:

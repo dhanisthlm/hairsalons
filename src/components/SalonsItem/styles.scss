@@ -1,0 +1,141 @@
+.salons {
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .heading {
+      font-size: 18px;
+    }
+
+    .filter-icon {
+      font-size: 20px;
+      color: #D4AF37;
+      transform: rotate(-90deg);
+    }
+
+    .go-back {
+      font-size: 18px;
+      color: #D4AF37;
+    }
+  }
+
+  .price-budget {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-color: #D4AF37;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+
+    .price-filter-indicator {
+      color: #D4AF37;
+    }
+
+    .toggle {
+      transform: rotate(-90deg);
+      color: #D4AF37;
+    }
+  }
+
+  .list {
+    margin: 0;
+    padding: 15px;
+    list-style-type: none;
+
+    &.filter {
+      margin-top: 105px;
+    }
+
+    .list-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #EFEFEF;
+      opacity: 0.7;
+      cursor: pointer;
+
+      .content {
+        position: relative;
+        padding-right: 27px;
+
+        &:after {
+          content: '\232A';
+          position: absolute;
+          top: 24px;
+          right: -9px;
+          color: #D4AF37;
+        }
+
+        .rating {
+          overflow: hidden;
+          padding-left: 50px;
+
+          .stars {
+            float: left;
+            padding: 5px 0;
+
+            .star {
+              position: relative;
+              color: #D4AF37;
+              margin-right: 2px;
+              font-size: 12px;
+
+              &.filled:before {
+                content: "\2605";
+                position: absolute;
+                top: -3px;
+              }
+            }
+
+            .votes {
+              font-family: 'Helvetica', 'Arial', 'sans-serif';
+              margin-left: 5px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .address {
+        font-family: 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 14px;
+        font-weight: 300;
+        display: block;
+        margin-left: 49px;
+        margin-top: 2px;
+      }
+
+      .duration {
+        float: right;
+        font-family: 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 27px;
+      }
+
+      .title {
+        overflow: hidden;
+
+        .time-slot {
+          float: left;
+          margin-right: 15px;
+        }
+
+        .price {
+          float: right;
+        }
+
+        .name {
+          font-size: 18px;
+        }
+
+        .price, .time-slot {
+          font-family: 'Helvetica', 'Arial', 'sans-serif';
+          font-size: 14px;
+          line-height: 23px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

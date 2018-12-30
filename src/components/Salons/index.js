@@ -4,9 +4,10 @@ import { connect } from 'react-redux';
 import { routeActions } from 'redux-simple-router';
 import { receiveSalons } from '../../actions/salons';
 import PriceFilter from '../PriceFilter';
+import { SalonsItem } from '../SalonsItem';
 import styles from './styles.scss';
 
-export class SalonList extends Component {
+class SalonList extends Component {
     constructor(props) {
         super(props);
 
@@ -43,7 +44,7 @@ export class SalonList extends Component {
     }
 
     toggleFilter() {
-       this.setState({ filterIsOpen: !this.state.filterIsOpen });
+      this.setState({ filterIsOpen: !this.state.filterIsOpen });
     }
 
     closeFilter() {
@@ -84,31 +85,10 @@ export class SalonList extends Component {
                 </div>
                 <ul className={listClass}>
                     {this.props.filteredSalons.map(item =>
-                        <li
-                            id={item._id}
-                            className="list-item"
-                            key={item._id}
-                            onClick={this.handleClick}>
-                            <div className="content">
-                                <div className="title">
-                                    <span className="time-slot">{item.timeSlot}</span>
-                                    <span className="name">{item.name}</span>
-                                    <span className="price">{item.price} kr</span>
-                                </div>
-                                <div className="rating">
-                                    <div className="stars">
-                                    <span className="star filled">☆</span>
-                                    <span className="star filled">☆</span>
-                                    <span className="star filled">☆</span>
-                                    <span className="star filled">☆</span>
-                                    <span className="star">☆</span>
-                                    <span className="votes">(24)</span>
-                                </div>
-                                <span className="duration">{item.duration} min</span>
-                            </div>
-                            <span className="address">{item.address}</span>
-                        </div>
-                     </li>
+                        <SalonsItem
+                          item={item}
+                          handleClick={this.handleClick}
+                        />
                   )}
               </ul>
         </div>

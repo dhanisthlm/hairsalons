@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Salons/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">components/Salons</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.81% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">10% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.81% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/27</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { routeActions } from 'redux-simple-router';
+import { receiveSalons } from '../../actions/salons';
+import PriceFilter from '../PriceFilter';
+import { SalonsItem } from '../SalonsItem';
+import styles from './styles.scss';
+&nbsp;
+class SalonList extends Component {
+<span class="fstat-no" title="function not covered" >    co</span>nstructor(props) {
+<span class="cstat-no" title="statement not covered" >        super(props);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.state = {</span>
+            filterIsOpen: false,
+            updateItem: null,
+            priceRange: {
+                min: null,
+                max: null,
+            }
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        this.toggleFilter = this.toggleFilter.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >        this.closeFilter = this.closeFilter.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >        this.handleClick = this.handleClick.bind(this);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    co</span>mponentDidMount() {
+<span class="cstat-no" title="statement not covered" >        this.props.dispatch(receiveSalons())</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    co</span>mponentDidUpdate(prevProps) {
+        const { priceRange } = <span class="cstat-no" title="statement not covered" >this.state;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (prevProps.priceRange.min !== this.props.priceRange.min) {</span>
+<span class="cstat-no" title="statement not covered" >            priceRange.min = this.props.priceRange.min;</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ priceRange });</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (prevProps.priceRange.max !== this.props.priceRange.max) {</span>
+<span class="cstat-no" title="statement not covered" >            priceRange.max = this.props.priceRange.max;</span>
+<span class="cstat-no" title="statement not covered" >            this.setState({ priceRange });</span>
+        }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    to</span>ggleFilter() {
+<span class="cstat-no" title="statement not covered" >      this.setState({ filterIsOpen: !this.state.filterIsOpen });</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    cl</span>oseFilter() {
+<span class="cstat-no" title="statement not covered" >        this.setState({ filterIsOpen: false });</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleClick(event) {
+<span class="cstat-no" title="statement not covered" >        this.props.dispatch(routeActions.push(`/list/salon/${event.currentTarget.id}`));</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    re</span>nder() {
+        const { salons, filteredSalons } = <span class="cstat-no" title="statement not covered" >this.props;</span>
+        const sorted = <span class="cstat-no" title="statement not covered" >filteredSalons.sort(<span class="fstat-no" title="function not covered" >(a</span>, b) =&gt; {</span>
+            return a.price &gt; b.price;
+        });
+&nbsp;
+        const lowestPrice = filteredSalons.length &amp;&amp; sorted[0].price;
+        const highestPrice = <span class="cstat-no" title="statement not covered" >filteredSalons.length &amp;&amp; sorted[filteredSalons.length - 1].price;</span>
+        const priceSpan = <span class="cstat-no" title="statement not covered" >lowestPrice &gt; 0 ? `${lowestPrice} - ${highestPrice} kr` : null;</span>
+        const listClass = <span class="cstat-no" title="statement not covered" >this.state.filterIsOpen ? 'list filter' : 'list';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return salons.length &gt; 0 &amp;&amp;</span>
+            &lt;div className="salons"&gt;
+                &lt;header className="controls"&gt;
+                    {
+                        this.state.filterIsOpen &amp;&amp;
+                            &lt;PriceFilter closeFilter={this.closeFilter} /&gt;
+                    }
+                    &lt;span className="go-back"&gt;&amp;#9001;&lt;/span&gt;
+                    &lt;span className="heading"&gt;Hår&lt;/span&gt;
+                    &lt;i onClick={this.toggleFilter} className="filter-icon fas fa-sliders-h" /&gt;
+                &lt;/header&gt;
+                &lt;div className="price-budget"&gt;
+                    &lt;span className="price-filter-indicator"&gt;
+                        {`Priser: ${priceSpan}`}
+                    &lt;/span&gt;
+                    &lt;span className="toggle"&gt;&amp;#9001;&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;ul className={listClass}&gt;
+                    {this.props.filteredSalons.map(<span class="fstat-no" title="function not covered" >it</span>em =&gt;
+<span class="cstat-no" title="statement not covered" >                        &lt;SalonsItem</span>
+                          item={item}
+                          handleClick={this.handleClick}
+                        /&gt;
+                  )}
+              &lt;/ul&gt;
+        &lt;/div&gt;
+    }
+}
+&nbsp;
+SalonList.propTypes = {
+    salons: PropTypes.array,
+    salon: PropTypes.object,
+    filteredSalons: PropTypes.array,
+    priceRange: PropTypes.object
+};
+&nbsp;
+function mapStateToProps (state) {
+  return {
+    salons: state.salons.list,
+    salon: state.salons.item,
+    filteredSalons: state.salons.filteredList,
+    priceRange: state.salons.priceRange
+  }
+}
+&nbsp;
+export default connect(mapStateToProps)(SalonList)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 31 2018 00:04:19 GMT+0100 (centraleuropeisk normaltid)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
