@@ -29,5 +29,5 @@ beforeEach(()=>{
 
 test('salonsitem', () => {
   wrapper = shallow(<SalonList store={store} />);
-  expect(SalonsItem.length).toBe(2);
+  expect(SalonsItem.length).toBe(1);
 })
