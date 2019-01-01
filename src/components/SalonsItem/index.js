@@ -8,7 +8,6 @@ export const SalonsItem = ({ item, handleClick }) => (
         className="list-item"
         key={item._id}
         onClick={handleClick}>
-        {console.log(item)}
         <div className="content">
             <div className="title">
                 <span className="time-slot">{item.timeSlot}</span>

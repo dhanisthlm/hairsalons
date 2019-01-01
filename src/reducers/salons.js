@@ -2,12 +2,12 @@ import { handleActions } from 'redux-actions'
 
 export default handleActions({
     RECEIVE_SALONS: (state, action) => {
-        const sorted = action.payload.sort((a, b) => {
-            return a.price > b.price;
+        action.payload.sort((a, b) => {
+            return a.price - b.price;
         });
         const priceRange = state.priceRange;
-        priceRange.min = sorted[0].price;
-        priceRange.max = sorted[action.payload.length -1].price;
+        priceRange.min = action.payload[0].price;
+        priceRange.max = action.payload[action.payload.length -1].price;
 
         return {
             ...state,

@@ -18,6 +18,12 @@ class PriceSlider extends Component {
         this.onAfterChange = this.onAfterChange.bind(this);
     }
 
+    componentDidMount() {
+      this.setState({
+        range: this.props.defaultRange
+      })
+    }
+
     onChange(values) {
         this.setState({ range: values });
     };
@@ -32,9 +38,8 @@ class PriceSlider extends Component {
     }
 
     render() {
-        const { priceRange } = this.props;
+        const { priceRange, defaultRange } = this.props;
         const range = this.state.range || [priceRange.min, priceRange.max];
-        console.log(this.state);
 
         return (
             <div className="price-filter-slider">

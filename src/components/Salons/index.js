@@ -57,12 +57,13 @@ class SalonList extends Component {
 
     render() {
         const { salons, filteredSalons } = this.props;
-        const sorted = filteredSalons.sort((a, b) => {
-            return a.price > b.price;
+
+        filteredSalons.sort((a, b) => {
+            return a.price - b.price;
         });
 
-        const lowestPrice = filteredSalons.length && sorted[0].price;
-        const highestPrice = filteredSalons.length && sorted[filteredSalons.length - 1].price;
+        const lowestPrice = filteredSalons.length && filteredSalons[0].price;
+        const highestPrice = filteredSalons.length && filteredSalons[filteredSalons.length - 1].price;
         const priceSpan = lowestPrice > 0 ? `${lowestPrice} - ${highestPrice} kr` : null;
         const listClass = this.state.filterIsOpen ? 'list filter' : 'list';
 
@@ -71,7 +72,10 @@ class SalonList extends Component {
                 <header className="controls">
                     {
                         this.state.filterIsOpen &&
-                            <PriceFilter closeFilter={this.closeFilter} />
+                            <PriceFilter
+                              closeFilter={this.closeFilter}
+                              defaultRange={[lowestPrice, highestPrice]}
+                            />
                     }
                     <span className="go-back">&#9001;</span>
                     <span className="heading">Hår</span>
