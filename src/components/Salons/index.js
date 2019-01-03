@@ -65,7 +65,6 @@ export class SalonList extends Component {
         const priceSpan = lowestPrice > 0 ? `${lowestPrice} - ${highestPrice} kr` : null;
         const listClass = this.state.filterIsOpen ? 'list filter' : 'list';
 
-
         return salons.length > 0 &&
             <div className="salons">
                 <header className="controls">
