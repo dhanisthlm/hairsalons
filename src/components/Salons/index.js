@@ -60,7 +60,8 @@ export class SalonList extends Component {
             return a.price > b.price;
         });
 
-        
+
+
         const lowestPrice = filteredSalons.length && sorted[0].price;
         const highestPrice = filteredSalons.length && sorted[filteredSalons.length - 1].price;
         const priceSpan = lowestPrice > 0 ? `${lowestPrice} - ${highestPrice} kr` : null;
