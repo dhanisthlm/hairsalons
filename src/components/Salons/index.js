@@ -62,6 +62,7 @@ class SalonList extends Component {
             return a.price - b.price;
         });
 
+
         const lowestPrice = filteredSalons.length && filteredSalons[0].price;
         const highestPrice = filteredSalons.length && filteredSalons[filteredSalons.length - 1].price;
         const priceSpan = lowestPrice > 0 ? `${lowestPrice} - ${highestPrice} kr` : null;
