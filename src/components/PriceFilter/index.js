@@ -41,6 +41,7 @@ class PriceSlider extends Component {
         const { priceRange, defaultRange } = this.props;
         const range = this.state.range || [priceRange.min, priceRange.max];
 
+
         return (
             <div className="price-filter-slider">
                 <h1 className="filter-heading">Filtrera på pris</h1>
